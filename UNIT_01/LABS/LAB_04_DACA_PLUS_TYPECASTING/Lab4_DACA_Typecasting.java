@@ -10,7 +10,7 @@
  * 
  */
 
-public class DACA_typecasting {
+public class Lab4_DACA_Typecasting {
     public static void main(String[] args) {
         // Declaration
         int TotalDACARecipients = 574398;
