@@ -1,0 +1,42 @@
+Lab 01 - Hello GOALS in CS!
+Learning Objective: demonstrate editing, running, and testing of Java lab
+
+
+
+Welcome to your first in-class lab! :D
+
+
+
+First start by running the given code, this is the most basic version of any running Java program.
+
+
+
+The prep modules will go more into each part, but for now get used to typing this out if you're ever asked to in class.
+
+
+
+To complete this lab, edit the code so it says:
+
+Hello, GOALS in CS!
+
+Also include, doc box at the top of the program and add comments in the code, so you know what is happening in the source code.
+
+Add few more lines (2-4) using print method.
+
+
+
+Doc box format: This is called a Documentation Box (Doc Box) or Flower Box, which is placed at the top of each program before you start coding.
+
+This provides reader with brief information about your Source Code.
+
+/*-----------------------------------------------------------------------------------------------
+
+ Program Name:
+
+ Programmer Name:
+
+ Description:
+
+ Date:
+
+------------------------------------------------------------------------------------------------*/
