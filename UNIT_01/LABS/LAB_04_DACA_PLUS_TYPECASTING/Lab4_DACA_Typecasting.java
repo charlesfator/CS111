@@ -20,7 +20,9 @@ public class Lab4_DACA_Typecasting {
 
         // Convertion
         double AverageDACAContrib = (double) TotalDACAContributions / TotalDACARecipients;
+        // double AverageDACAContrib = 2999.99;
         int RoundedAverage = (int) AverageDACAContrib;
+        // int RoundedAverage = (int) Math.round(AverageDACAContrib);
         double RoundedToHundredth = Math.round(AverageDACAContrib * 100.0) / 100.0;
         String StateWithMostRecipients = ("" + FirstLetter + SecondLetter).toUpperCase();
 
