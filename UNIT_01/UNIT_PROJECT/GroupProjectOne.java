@@ -15,29 +15,35 @@ public class GroupProjectOne {
     // METHODS
 
     // Leo's methods
-    
-    public static String formatASCII(String artLine) {
-        // In this method you will need to take in a string with that line of ascii art and format it so it prints correctly in the end.
-        return artLine;
-    }
 
     public static String characterName(String name, int level) {
         // This method will concatenate the line with name and level which will require a String and int data types.
-        String combinedOutput = name + level;
+        String combinedOutput = "NAME: " + name + "           LV: " + level;
         return combinedOutput;
     }
-
-    // MJ's methods
     
     public static String characterAbilities(String ability, int HP) {
         // This method creates the line with ability and hp number
-        String combinedOutput = ability + HP;
+        String combinedOutput = " Ability: " + ability + "         HP: " + HP;
         return combinedOutput;
     }
 
     public static String chanceOfSpecial(double percentage) {
         // The method creates the line with the chance that your special will activate
-        String combinedOutput = "" + percentage;
+        String combinedOutput = "Special Chance: " + percentage;
+        return combinedOutput;
+    }
+    // MJ's methods
+    
+    public static String characterWeight(String label, int weight) {
+        // The method returns the line with the weight of the character
+        String combinedOutput = ""+ label + "   " + weight; 
+        return combinedOutput;
+    }
+
+    public static String characterHeight(String label, int feet, int inches) {
+        // Use String.format(); to add ' and " for feet and inches of the character height
+        String combinedOutput = ""+ label +  "   "+ feet +"'"+ inches+"\"";
         return combinedOutput;
     }
 
@@ -45,47 +51,34 @@ public class GroupProjectOne {
 
     public static String createDescription(String label, String description) {
         // This method creates the description line for the output
-        String combinedOutput = label + description;
+        String combinedOutput = "" + label + "" + description + "";
         return combinedOutput;
     }
 
     public static String copyRightStatment(String label, int year) {
         // This method creates a copyright statement at the bottom
-        String combinedOutput = label + year;
+        String combinedOutput = "" + label + "" + year + "";
         return combinedOutput;
     }
 
     public static void main(String[] args) {
         // Assigning methods to variables
 
-        // Leo's ASCII section
-
-        String ASCII01 = formatASCII("");
-        String ASCII02 = formatASCII("");
-        String ASCII03 = formatASCII("");
-        String ASCII04 = formatASCII("");
-        String ASCII05 = formatASCII("");
-        String ASCII06 = formatASCII("");
-        String ASCII07 = formatASCII("");
-        String ASCII08 = formatASCII("");
-        String ASCII09 = formatASCII("");
-        String ASCII10 = formatASCII("");
-        String ASCII11 = formatASCII("");
-        String ASCII12 = formatASCII("");
-
         // Leo's name and level section
 
-        String nameAndLevel = characterName("", 0);
+        String nameAndLevel = characterName("Charizard", 76);
+        String abilityAndHP = characterAbilities("PK Fire", 150);
+        String specialProb = chanceOfSpecial(69.99);
 
         // Mj's variable assignment
 
-        String abilityAndHP = characterAbilities("", 0);
-        String specialProb = chanceOfSpecial(0);
+        String weight = characterWeight("WEIGHT", 275);
+        String height = characterHeight("HEIGHT", 7, 3);
 
         // Charlie's variable assignment
 
-        String description = createDescription("", "");
-        String copyright = copyRightStatment("", 2000);
+        String description = createDescription("DESCRIPTION:", " An Albanian guy       ║         \n║   who eats people.                  ");
+        String copyright = copyRightStatment("COPYRIGHT: ", 2024);
 
         /* Final formated print statement
          *
@@ -95,7 +88,7 @@ public class GroupProjectOne {
          */ 
 
         System.out.printf("╔══════════════════════════════════════╗\n");
-        System.out.printf("║                                      ║\n");
+        System.out.printf("║%38s║\n","");
         System.out.printf("║   ╔══════════════════════════════╗   ║\n");
         System.out.printf("║   ║          __________       *  ║   ║\n");
         System.out.printf("║   ║   *     //////\\\\\\\\\\\\         ║   ║\n");
@@ -108,14 +101,17 @@ public class GroupProjectOne {
         System.out.printf("║   ║      _____/      \\_____      ║   ║\n");
         System.out.printf("║   ║     /                  \\     ║   ║\n");
         System.out.printf("║   ╚══════════════════════════════╝   ║\n");
-        System.out.printf("║   NAME: John Smith          LV: 69   ║\n");
-        System.out.printf("║   ABILITIES: FIRE            HP 70   ║\n");
-        System.out.printf("║                                      ║\n");
-        System.out.printf("║                                      ║\n");
-        System.out.printf("║   DESCRIPTION:                       ║\n");
-        System.out.printf("║   A really weird guy from Alb-       ║\n");
-        System.out.printf("║   ania. He eats brocolli.            ║\n");
-        System.out.printf("║                                      ║\n");
+        System.out.printf("║   " + nameAndLevel + "   ║\n");
+        System.out.printf("║  " + abilityAndHP + "   ║\n");
+        System.out.printf("║   " + specialProb + "              ║\n","");
+        System.out.printf("║%38s║\n","");
+        System.out.printf("║   " + weight + "                       ║\n"); 
+        System.out.printf("║   " + height + "                      ║\n");
+        System.out.printf("║%38s║\n","");
+        System.out.printf("║   " + description + " ║\n");
+        System.out.printf("║%38s║\n","");
+        System.out.printf("║   " + copyright + "                    ║\n");
+        System.out.printf("║%38s║\n","");
         System.out.printf("╚══════════════════════════════════════╝\n");
 
     }
