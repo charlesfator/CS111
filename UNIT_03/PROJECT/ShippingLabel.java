@@ -1,3 +1,5 @@
+
+
 public class ShippingLabel {
 
     // Instance Variables
@@ -122,6 +124,17 @@ public class ShippingLabel {
 
     public String toString() {
         return String.format("%s, %s, %s, %s, %d, %f, %f", name, adress, city, state, postalCode, packageWeight, shippingCost);
+    }
+
+    public void printLabel() {
+        System.out.printf("\n");
+        System.out.println("Ship to:");
+        System.out.println(name);
+        System.out.println(adress);
+        System.out.println(city + ", " + state + " " + postalCode);
+        System.out.println("Shipping Weight (lbs): " + packageWeight);
+        System.out.println("Shipping Cost ($ USD): $" + shippingCost);
+        System.out.printf("\n");
     }
 
 }
